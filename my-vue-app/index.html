@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Halaman Web</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+      }
+    
+      h1 {
+        color: #333;
+      }
+    
+      .button-container {
+        margin-top: 20px;
+      }
+    
+      .button-container button {
+        margin: 5px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    
+      #nameInput {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 300px;
+      }
+    
+      #dataValue {
+        margin-top: 20px;
+        font-size: 18px;
+      }
+    
+      .highlight {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+    </head>
+    <body>
+    
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contoh Halaman Web</title>
+      <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 0;
+          padding: 20px;
+          background-color: #f2f2f2; /* Warna latar belakang */
+        }
+      
+        h1 {
+          color: #333;
+        }
+      
+        .button-container {
+          margin-top: 20px;
+        }
+      
+        .button-container button {
+          margin: 5px;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+      
+        #nameInput {
+          margin-top: 20px;
+          padding: 10px;
+          font-size: 16px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          width: 300px;
+        }
+      
+        #dataValue {
+          margin-top: 20px;
+          font-size: 18px;
+        }
+      
+        .highlight {
+          color: blue;
+          font-weight: bold;
+        }
+      </style>
+      </head>
+      <body>
+      
+      <h1>INGGIT REYGI </h1>
+      <h1>ubah warna teks</h1>
+      
+      <div class="button-container">
+        <button id="blueButton" style="background-color: blue; color: white;">Biru</button>
+        <button id="greenButton" style="background-color: green; color: white;">Hijau</button>
+        <button id="redButton" style="background-color: red; color: white;">Merah</button>
+      </div>
+      
+      <input type="text" id="nameInput" placeholder="Masukkan nama Anda" autocomplete="off">
+      
+      <p id="dataValue">-</p>
+      
+      <script>
+        const blueButton = document.getElementById('blueButton');
+        const greenButton = document.getElementById('greenButton');
+        const redButton = document.getElementById('redButton');
+        const nameInput = document.getElementById('nameInput');
+        const dataValueSpan = document.getElementById('dataValue');
+      
+        blueButton.addEventListener('click', function() {
+          updateDataValue('blue');
+        });
+      
+        greenButton.addEventListener('click', function() {
+          updateDataValue('green');
+        });
+      
+        redButton.addEventListener('click', function() {
+          updateDataValue('red');
+        });
+      
+        function updateDataValue(color) {
+          dataValueSpan.textContent = nameInput.value;
+          dataValueSpan.style.color = color;
+        }
+      
+        nameInput.addEventListener('input', function() {
+          if (nameInput.value.length > 0) {
+            dataValueSpan.classList.add('highlight');
+          } else {
+            dataValueSpan.classList.remove('highlight');
+          }
+        });
+      </script>
+      
+      </body>
+      </html>
+      
+    
+    </body>
+    </html>
+    
+    
+    </body>
+    </html>
+    
+
+  </body>
+</html>
